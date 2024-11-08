@@ -11,7 +11,7 @@ function App() {
       future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
     >
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
         <Route path="/movie/:id" element={<Detail />} />
         <Route path="/hello" element={<h2>hello</h2>} />
       </Routes>
